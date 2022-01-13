@@ -139,10 +139,12 @@ describe('Repositories', () => {
       last_name: 'fRAga',
     });
 
+
     const result2 = await usersRepository.findUserByFullName({
       first_name: 'Danilo',
       last_name: 'Vieira',
     });
+
 
     expect(result1).toEqual([
       expect.objectContaining({
